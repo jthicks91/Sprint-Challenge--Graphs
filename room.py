@@ -15,6 +15,7 @@ class Room:
         return f"\n-------------------\n\n{self.name}\n\n   {self.description}\n\n{self.get_exits_string()}\n"
     def print_room_description(self, player):
         print(str(self))
+    # get exits function will be key for finding the right answer
     def get_exits(self):
         exits = []
         if self.n_to is not None:
